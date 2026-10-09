@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="One Heart Gospel Church International - Bayugan City. Loving God, loving His people. Join us for Sunday worship.">
+  <meta name="theme-color" content="#102c4e">
+  <title>One Heart Gospel Church International | Bayugan City</title>
+  <style>
+    :root {
+      --navy: #102c4e;
+      --navy-dark: #091b30;
+      --gold: #e9b94e;
+      --cream: #fffaf0;
+      --white: #ffffff;
+      --text: #253247;
+      --muted: #5e6b7d;
+      --line: #e5e9ef;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; color: var(--text); line-height: 1.7; background: var(--white); }
+    a { text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    header {
+      background: var(--navy); color: white; padding: 15px 6%;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; max-width: 560px; }
+    .brand img { width: 68px; height: 68px; object-fit: contain; background: white; border-radius: 50%; }
+    .brand h1 { font-size: 18px; line-height: 1.35; }
+    .brand p { color: var(--gold); font-size: 12px; letter-spacing: 1px; }
+    nav { display: flex; gap: 15px; flex-wrap: wrap; }
+    nav a { color: white; font-size: 13px; font-weight: bold; }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      min-height: 560px; padding: 85px 8%; display: flex; align-items: center; justify-content: center;
+      text-align: center; color: white;
+      background: linear-gradient(rgba(8,29,53,.82), rgba(8,29,53,.86)),
+        url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    .hero-content { max-width: 850px; }
+    .eyebrow { color: var(--gold); font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
+    .hero h2 { font-size: clamp(32px, 6vw, 58px); line-height: 1.15; margin: 20px 0; }
+    .hero p { font-size: 18px; margin-bottom: 28px; }
+    .btn { display: inline-block; background: var(--gold); color: var(--navy); padding: 13px 25px; border-radius: 6px; font-weight: bold; margin: 5px; }
+    .btn:hover { opacity: .88; }
+    .btn-outline { background: transparent; border: 2px solid white; color: white; }
+    section { padding: 70px 8%; scroll-margin-top: 20px; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { color: var(--navy); font-size: clamp(26px, 4vw, 36px); }
+    .section-title p { max-width: 700px; margin: 8px auto; }
+    .gold-line { height: 4px; width: 65px; background: var(--gold); margin: 12px auto; border-radius: 10px; }
+    .welcome { text-align: center; background: var(--cream); }
+    .welcome .intro { max-width: 850px; margin: auto; }
+    .scripture { color: var(--navy); font-weight: bold; margin-top: 20px; font-style: italic; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .card { background: white; padding: 27px; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 5px 18px rgba(16,44,78,.06); }
+    .card h3 { color: var(--navy); margin-bottom: 12px; }
+    .symbol { font-size: 32px; margin-bottom: 10px; }
+    .light { background: #f3f6fa; }
+    .faith-list { max-width: 850px; margin: auto; display: grid; gap: 15px; }
+    .faith-item { background: white; padding: 20px 24px; border-left: 5px solid var(--gold); border-radius: 5px; }
+    .faith-item h3 { color: var(--navy); margin-bottom: 5px; }
+    .ministry-card { border-top: 4px solid var(--gold); }
+    .schedule { background: var(--navy); color: white; text-align: center; }
+    .schedule h2 { color: var(--gold); font-size: clamp(28px, 4vw, 36px); }
+    .schedule p { margin: 10px 0; }
+    .schedule-box { max-width: 680px; margin: 25px auto 0; padding: 28px; border: 1px solid rgba(255,255,255,.3); border-radius: 12px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .contact-info p { margin: 12px 0; overflow-wrap: anywhere; }
+    .contact-info a { color: var(--navy); text-decoration: underline; }
+    .map { width: 100%; height: 320px; border: 0; border-radius: 10px; }
+    .facebook { text-align: center; background: var(--cream); }
+    footer { background: var(--navy-dark); color: white; text-align: center; padding: 30px 7%; }
+    footer p { margin: 5px 0; font-size: 14px; }
+    .footer-gold { color: var(--gold); }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      header { justify-content: center; }
+      nav { justify-content: center; }
+    }
+    @media (max-width: 600px) {
+      .grid, .contact-grid { grid-template-columns: 1fr; }
+      section { padding: 50px 6%; }
+      .hero { min-height: 470px; padding: 60px 6%; }
+      .brand h1 { font-size: 15px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <!-- Put your church logo in this folder and name it logo.png -->
+      <img src="logo.png" alt="One Heart Gospel Church logo" onerror="this.style.display='none'">
+      <div>
+        <h1>One Heart Gospel Church International</h1>
+        <p>BAYUGAN CITY · ESTABLISHED 2015</p>
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#faith">Faith</a>
+      <a href="#programs">Programs</a><a href="#ministries">Ministries</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">One Heart, One Family in Christ</p>
+        <h2>Welcome to One Heart Gospel Church International</h2>
+        <p>Loving God, Loving His People. A church family committed to worship, discipleship, fellowship, and sharing the Gospel of Jesus Christ.</p>
+        <a class="btn" href="#schedule">Join Our Sunday Service</a>
+        <a class="btn btn-outline" href="#about">Discover Our Church</a>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="intro">
+        <div class="section-title"><h2>You Are Welcome Here!</h2><div class="gold-line"></div></div>
+        <p>We believe every person needs to experience the love of God and grow in a personal relationship with Jesus Christ. Whether you are visiting for the first time or looking for a church family, we warmly welcome you.</p>
+        <p class="scripture">“Love one another.” — John 13:34</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><h2>Our Mission and Vision</h2><div class="gold-line"></div><p>Our commitment to God and His people.</p></div>
+      <div class="grid">
+        <article class="card"><div class="symbol">🎯</div><h3>Our Mission</h3><p>To proclaim the Gospel of Jesus Christ, lead people to salvation, nurture believers through the Word of God, build disciples, and serve our community with Christlike love.</p></article>
+        <article class="card"><div class="symbol">🌅</div><h3>Our Vision</h3><p>To see lives transformed by the power of the Gospel, families strengthened in faith, disciples equipped for ministry, and communities reached for the glory of God.</p></article>
+        <article class="card"><div class="symbol">❤️</div><h3>Our Core Values</h3><p>Love for God, love for people, faithfulness to Scripture, prayer, unity, servant leadership, integrity, discipleship, and commitment to the Great Commission.</p></article>
+      </div>
+    </section>
+
+    <section id="faith" class="light">
+      <div class="section-title"><h2>Our Core Statement of Faith</h2><div class="gold-line"></div><p>This is a suggested summary of foundational Christian beliefs. Please review it against the church’s officially approved statement.</p></div>
+      <div class="faith-list">
+        <article class="faith-item"><h3>1. The Holy Scriptures</h3><p>We believe the Bible is the inspired Word of God and our foundation for faith, teaching, and Christian living. (2 Timothy 3:16–17)</p></article>
+        <article class="faith-item"><h3>2. God</h3><p>We believe in the one true God, revealed as Father, Son, and Holy Spirit, according to historic Christian faith. (Matthew 28:19)</p></article>
+        <article class="faith-item"><h3>3. Jesus Christ</h3><p>We believe in Jesus Christ, the Son of God, His incarnation, sinless life, death for our sins, bodily resurrection, ascension, and promised return. (1 Corinthians 15:3–4)</p></article>
+        <article class="faith-item"><h3>4. Salvation</h3><p>We believe salvation is God’s gift of grace, received through faith in Jesus Christ, leading to repentance and a transformed life. (Ephesians 2:8–10)</p></article>
+        <article class="faith-item"><h3>5. The Holy Spirit</h3><p>We believe the Holy Spirit works in believers to bring spiritual renewal, godly character, empowerment for service, and growth in Christ. (Galatians 5:22–23)</p></article>
+        <article class="faith-item"><h3>6. The Church and the Great Commission</h3><p>We believe the Church is called to worship God, make disciples, fellowship in faith, serve others, and proclaim the Gospel to all nations. (Matthew 28:19–20)</p></article>
+        <article class="faith-item"><h3>7. The Resurrection and Eternal Life</h3><p>We believe in the resurrection of the dead, the return of Jesus Christ, and God’s promise of eternal life. (John 11:25–26)</p></article>
+      </div>
+    </section>
+
+    <section id="programs">
+      <div class="section-title"><h2>Programs and Activities</h2><div class="gold-line"></div><p>Growing together in worship, faith, service, and fellowship.</p></div>
+      <div class="grid">
+        <article class="card"><div class="symbol">🙏</div><h3>Sunday Worship Service</h3><p>Gathering for praise, worship, prayer, and the preaching of God’s Word.</p></article>
+        <article class="card"><div class="symbol">📖</div><h3>Bible Study and Discipleship</h3><p>Studying Scripture and helping believers mature in their faith.</p></article>
+        <article class="card"><div class="symbol">🤝</div><h3>Prayer and Fellowship</h3><p>Praying together, encouraging one another, and building unity in Christ.</p></article>
+        <article class="card"><div class="symbol">🌱</div><h3>Evangelism and Outreach</h3><p>Sharing the Gospel and reaching families and communities with God’s love.</p></article>
+        <article class="card"><div class="symbol">🎉</div><h3>Church Celebrations</h3><p>Church anniversaries, special services, thanksgiving, and fellowship events.</p></article>
+        <article class="card"><div class="symbol">💝</div><h3>Community Care</h3><p>Serving people through compassion, encouragement, and practical support.</p></article>
+      </div>
+    </section>
+
+    <section id="ministries" class="light">
+      <div class="section-title"><h2>Our Ministries</h2><div class="gold-line"></div><p>Every believer can grow, serve, and contribute to the work of God.</p></div>
+      <div class="grid">
+        <article class="card ministry-card"><h3>Worship Ministry</h3><p>Leading the congregation in praise, worship, and thanksgiving.</p></article>
+        <article class="card ministry-card"><h3>Children’s Ministry</h3><p>Teaching children biblical truths and helping them know Jesus.</p></article>
+        <article class="card ministry-card"><h3>Youth Ministry</h3><p>Equipping young people to live out their faith and serve God.</p></article>
+        <article class="card ministry-card"><h3>Women’s Ministry</h3><p>Encouraging women through prayer, discipleship, and fellowship.</p></article>
+        <article class="card ministry-card"><h3>Men’s Ministry</h3><p>Developing godly character, leadership, and responsibility.</p></article>
+        <article class="card ministry-card"><h3>Prayer Ministry</h3><p>Interceding for the church, families, leaders, and community.</p></article>
+        <article class="card ministry-card"><h3>Evangelism Ministry</h3><p>Sharing the message of salvation and reaching the lost.</p></article>
+        <article class="card ministry-card"><h3>Ushers and Greeters</h3><p>Welcoming visitors and helping maintain an orderly service.</p></article>
+        <article class="card ministry-card"><h3>Discipleship and Missions</h3><p>Training believers and supporting the spread of the Gospel.</p></article>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Come and Worship With Us</h2><p>There is a place for you in our church family.</p>
+      <div class="schedule-box">
+        <h3>Sunday Worship Service</h3>
+        <p><strong>Day:</strong> Every Sunday</p>
+        <p><strong>Time:</strong> 9:30 AM – 11:30 AM</p>
+        <p><strong>Venue:</strong> Purok 8, Emerald Heights, Brgy. Sta. Irene, Bayugan City, Agusan del Sur, Philippines</p>
+        <a class="btn" href="#contact">Plan Your Visit</a>
+      </div>
+    </section>
+
+    <section class="facebook" id="facebook">
+      <div class="section-title"><h2>Connect With Us on Facebook</h2><div class="gold-line"></div><p>Look for our church page to see announcements, worship services, ministry activities, and upcoming events.</p></div>
+      <!-- This opens Facebook search because a direct page URL was not provided. Replace with the exact page URL when available. -->
+      <a class="btn" href="https://www.facebook.com/search/top?q=one%20heart%20gospel%20chuch%20international%20bayugan%20city" target="_blank" rel="noopener noreferrer">Find Our Facebook Page</a>
+    </section>
+
+    <section id="contact">
+      <div class="section-title"><h2>Contact and Visit Us</h2><div class="gold-line"></div><p>We would love to hear from you and welcome you in person.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info card">
+          <h3>One Heart Gospel Church International</h3>
+          <p><strong>Address:</strong> Purok 8, Emerald Heights, Brgy. Sta. Irene, Bayugan City, Agusan del Sur, Philippines</p>
+          <p><strong>Sunday Service:</strong> 9:30 AM – 11:30 AM</p>
+          <p><strong>Phone:</strong> <a href="tel:+639631760509">0963 176 0509</a></p>
+          <p><strong>Email:</strong> <a href="mailto:oneheartbayugan@gmail.com">oneheartbayugan@gmail.com</a></p>
+          <p><strong>Facebook page name:</strong> one heart gospel chuch international bayugan city</p>
+          <p><a href="https://www.facebook.com/search/top?q=one%20heart%20gospel%20chuch%20international%20bayugan%20city" target="_blank" rel="noopener noreferrer">Search for our Facebook page</a></p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Purok+8%2C+Emerald+Heights%2C+Brgy.+Sta.+Irene%2C+Bayugan+City%2C+Agusan+del+Sur%2C+Philippines" target="_blank" rel="noopener noreferrer">Open church address in Google Maps</a></p>
+        </div>
+        <div>
+          <iframe class="map" title="Google Maps search for the church address"
+            src="https://maps.google.com/maps?q=Purok%208%2C%20Emerald%20Heights%2C%20Brgy.%20Sta.%20Irene%2C%20Bayugan%20City%2C%20Agusan%20del%20Sur%2C%20Philippines&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p style="font-size:13px;color:#5e6b7d;margin-top:8px">Map shows a search for the supplied address; confirm the exact pin before sharing publicly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-gold"><strong>ONE HEART GOSPEL CHURCH INTERNATIONAL</strong></p>
+    <p>Bayugan City, Agusan del Sur, Philippines</p>
+    <p><em>Loving God, Loving His People.</em></p>
+    <p>© <span id="year"></span> One Heart Gospel Church International. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
